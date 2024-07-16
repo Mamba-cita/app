@@ -106,20 +106,7 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "djongo",
-#         "CLIENT": {
-#             "host": "mongodb+srv://gigi:tomi@ac-a5ygtx1-shard-00-00.vadkdy7.mongodb.net?ssl=true",
-#             "ssl": True,
-#             "replicaSet": "atlas-10ol5y-shard-0",
-#             "authSource": "admin",
-#             "retryWrites": True,
-#             "w": "majority",
-#             "appName": "track",
-#         }
-#     }
-# }
+
 
 
 
