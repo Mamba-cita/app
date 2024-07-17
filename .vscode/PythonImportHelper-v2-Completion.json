@@ -234,6 +234,15 @@
         "documentation": {}
     },
     {
+        "label": "pymongo",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -452,16 +461,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "WSGI_APPLICATION = \"backend.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": os.getenv(\"DB_NAME\"),\n        \"USER\": os.getenv(\"DB_USER\"),\n        \"PASSWORD\": os.getenv(\"DB_PWD\"),\n        \"HOST\": os.getenv(\"DB_HOST\"),",
-        "detail": "backend.backend.settings",
-        "documentation": {}
-    },
-    {
-        "label": "DATABASES",
-        "kind": 5,
-        "importPath": "backend.backend.settings",
-        "description": "backend.backend.settings",
-        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": os.getenv(\"DB_NAME\"),\n        \"USER\": os.getenv(\"DB_USER\"),\n        \"PASSWORD\": os.getenv(\"DB_PWD\"),\n        \"HOST\": os.getenv(\"DB_HOST\"),\n        \"PORT\": os.getenv(\"DB_PORT\"),\n    }\n}",
+        "peekOfCode": "WSGI_APPLICATION = \"backend.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\n# DATABASES = {\n#     \"default\": {\n#         \"ENGINE\": \"django.db.backends.postgresql\",\n#         \"NAME\": os.getenv(\"DB_NAME\"),\n#         \"USER\": os.getenv(\"DB_USER\"),\n#         \"PASSWORD\": os.getenv(\"DB_PWD\"),\n#         \"HOST\": os.getenv(\"DB_HOST\"),",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -562,6 +562,33 @@
         "description": "backend.backend.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "backend.backend.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "backend.db_connection",
+        "description": "backend.db_connection",
+        "peekOfCode": "url = \"mongodb+srv://gigi:tomi@ter.kskf9ol.mongodb.net/t-truck?retryWrites=true&w=majority&appName=ter\"\nclient = pymongo.MongoClient(url)\ndb = client['t-truck']",
+        "detail": "backend.db_connection",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "backend.db_connection",
+        "description": "backend.db_connection",
+        "peekOfCode": "client = pymongo.MongoClient(url)\ndb = client['t-truck']",
+        "detail": "backend.db_connection",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "backend.db_connection",
+        "description": "backend.db_connection",
+        "peekOfCode": "db = client['t-truck']",
+        "detail": "backend.db_connection",
         "documentation": {}
     },
     {
