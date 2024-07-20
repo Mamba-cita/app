@@ -234,6 +234,15 @@
         "documentation": {}
     },
     {
+        "label": "pymongo",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -457,15 +466,6 @@
         "documentation": {}
     },
     {
-        "label": "DATABASES",
-        "kind": 5,
-        "importPath": "backend.backend.settings",
-        "description": "backend.backend.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
-        "detail": "backend.backend.settings",
-        "documentation": {}
-    },
-    {
         "label": "AUTH_PASSWORD_VALIDATORS",
         "kind": 5,
         "importPath": "backend.backend.settings",
@@ -562,6 +562,33 @@
         "description": "backend.backend.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "backend.backend.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "backend.db_connection",
+        "description": "backend.db_connection",
+        "peekOfCode": "url = \"mongodb+srv://gigi:tomi@ter.kskf9ol.mongodb.net/t-truck?retryWrites=true&w=majority&appName=ter\"\nclient = pymongo.MongoClient(url)\ndb = client['t-truck']",
+        "detail": "backend.db_connection",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "backend.db_connection",
+        "description": "backend.db_connection",
+        "peekOfCode": "client = pymongo.MongoClient(url)\ndb = client['t-truck']",
+        "detail": "backend.db_connection",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "backend.db_connection",
+        "description": "backend.db_connection",
+        "peekOfCode": "db = client['t-truck']",
+        "detail": "backend.db_connection",
         "documentation": {}
     },
     {
